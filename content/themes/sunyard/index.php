@@ -12,6 +12,12 @@
  * @version 1.0
  */
 
-  get_header(); ?>
+get_header();
 
-<?php get_footer();
+if ( have_posts() ) :
+	while ( have_posts() ) :
+		the_post();
+	endwhile;
+endif;
+
+get_footer();
