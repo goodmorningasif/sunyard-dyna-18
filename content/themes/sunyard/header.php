@@ -33,3 +33,17 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+  <div class="content" id="container">
+    <header id="head">
+      <div class="menu-item">
+        <a href=""><span class="a">a</span>b<span class="o">o</span>u&nbsp;t</a>
+      </div>
+      <div class="menu-item">
+        <a href="">fAq</a>
+      </div>
+      <div class="menu-item">
+        <a href="">proje&nbsp;<span class="c">c</span>t pr&nbsp;ogress <span class="u">u</span>pd&nbsp;ate</a>
+      </div>
+    </header>
+  </div>

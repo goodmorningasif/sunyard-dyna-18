@@ -87,14 +87,14 @@ Follow these steps to configure your install to your specific project.
   + [x]  Login, go to the 'Appearance' tab and activate your theme
 
 9. Push your first commit
-  * [ ]  Run `git status` to see a status
-  * [ ]  Run `git add .`
-  * [ ]  Run `git commit -m"[ YOUR_COMMIT_MESSAGE ]"` 
-  * [ ]  Run `git push origin master` to push your commit to Github
+  * [x]  Run `git status` to see a status
+  * [x]  Run `git add .`
+  * [x]  Run `git commit -m"[ YOUR_COMMIT_MESSAGE ]"` 
+  * [x]  Run `git push origin master` to push your commit to Github
 
 10. Starting your project
-  * [ ]  Run `gulp`
-  * [ ]  Refresh your page, start writing code ...
+  * [x]  Run `gulp`
+  * [x]  Refresh your page, start writing code ...
  
 
 ### Editing Current Project
