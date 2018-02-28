@@ -1,19 +1,19 @@
 {
-  "name": "[ INIT ]",
+  "name": "sunyard",
   "version": "1.0.0",
-  "description": " Frenchy is a site for testers",
+  "description": "Dynamic site for the Sun Yard",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "[ INIT ] "
+    "url": "sunyard.sdcopartners.com"
   },
-  "author": "[ INIT ] | SDCO Partners",
+  "author": "Asif Ahmed | SDCO Partners",
   "license": "ISC",
   "bugs": {
-    "url": "[ INIT ]/bugs"
+    "url": "https://github.com/goodmorningasif/sunyard-dyna-18.git/bugs"
   },
   "homepage": "index.js",
   "devDependencies": {
