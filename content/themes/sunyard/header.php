@@ -11,7 +11,8 @@
  * @since 1.0
  * @version 1.0
  */
-    $_DIR = get_template_directory_uri();
+
+$_DIR = get_template_directory_uri();
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">

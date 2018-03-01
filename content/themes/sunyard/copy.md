@@ -39,3 +39,9 @@
 	How will the hotel interact positively with the neighborhood?
 
 	Our hope is to be the biggest champions of the St. Claude Arts District and all of the local businesses up and down the corridor so our guests know what’s cool and what’s happening on any given day and night.  Let us know what’s up. We are also hoping to have an artist in residence program where a working New Orleans artist lives on site and offers programming to guests and locals alike. Lastly, we will be an employer of approximately 30 folks at the Sun Yard. We offer fair pay and benefits in an equitable work environment. Our priority is hiring folks from the neighborhood and surrounding neighborhoods. and to to hire returning citizens, those New Orleanians who have previously been incarcerated. This is an issue that is particularly important to us.
+
+
+## Blog Page
+
+1.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

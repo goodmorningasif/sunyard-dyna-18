@@ -28,7 +28,10 @@ header#head
 
 
 	section#feat-logo
-		position: relative
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
 
 		div.svg
 			position: absolute
@@ -65,46 +68,127 @@ header#head
 				width: 400px
 				height: 210px
 
-div.content#container > *
-	position: absolute
 
 div.content#container
+	width: 100%
+	max-width: 780px
+	padding-top: 450px
+	padding-bottom: 150px
+	margin: 0 auto
+
+	h6
+		padding-bottom: 20px
+	p
+		text-indent: 50px
+		padding-bottom: 40px 
+
+	figure
+		img
+			display: block
+			margin: 0 auto
+			padding-top: 40px
+			padding-bottom: 40px
+
+body.blog div.content#container
+	padding-top: 550px
+
+
+body.home div.content#container > *
+	position: absolute
+
+body.home div.content#container
 	position: relative
 	z-index: 100
-	height: 2724px
+	height: 3124px
+	max-width: 100%
 
 	section.wp-block-cover-image
 		+img
 		top: 0
 		left: 0
 		height: 768px
+		width: 100%
+
+	p
+		text-indent: 0
 
 	p.text-1
-		position: absolute
 		top: 820px
 		left: calc( 50% - 214px )
 		width: 520px
 
 	p.text-2
-		position: absolute
 		top: 930px
 		left: calc( 50% - 380px )
 		width: 320px
 
 	figure.img-1
-		position: absolute
 		top: 960px
 		left: calc( 50% + 80px )
 
+
+	figure.svg-1
+		top: 1220px
+		left: calc( 50% + 15px )
+		width: 121px
+		height: 303px
+
 	figure.img-2
-		position: absolute
 		top: 1340px
 		left: calc( 50% - 544px )
 
+	figure.img-3
+		top: 1560px
+		left: calc( 50% - 50px )
 
+	p.text-3
+		top: 2095px
+		left: 50%
+		width: 463px
+	
+	figure.img-4
+		top: 2000px
+		left: calc( 50% - 534px)
+
+	figure.img-5
+		top: 2250px
+		left: calc( 50% + 20px )
+
+	figure.img-6
+		top: 2550px
+		left: calc( 50% - 341px )
+
+	p.text-4
+		top: 3000px
+		left: calc( 50% + 90px )
+		width: 523px
 
 
 footer#foot
+	+flex
+	width: 100%
+	max-width: 490px
+	margin-left: 180px 
+	padding-bottom: 90px
+
+	div.wrapper
+		flex: 0 0 50%
+
+	div.left.wrapper
+		div.svg.sun-shine
+			svg
+				width: 229px
+				heigth: 141px
+
+	div.right.wrapper
+		address
+			p
+				margin-bottom: 8px
+
+			svg
+				width: 193px
+				height: 8px
+
 
 /* OBJECTS -> For styling objects */
 /* Includes cosmetic styles like color, typography, and borders */
@@ -112,10 +196,48 @@ footer#foot
 
 header#head
 
+	div.svg
+		path.mermaid-cls-1,
+		path.sunferns-cls-1,
+		path.hanging-cls-1
+			fill: $green
+
+		polygon.logo-cls-1,
+		path.logo-cls-1
+			fill: $black
+
 	nav#nav
 		a
 			font-size: 0.7rem
-			color: $yellow
+			color: $black
+			&:hover
+				color: $white
 
-footer#foot
-	
+
+body.home header#head
+	div.svg
+		path.mermaid-cls-1,
+		path.sunferns-cls-1,
+		path.hanging-cls-1
+			fill: $black
+
+		polygon.logo-cls-1,
+		path.logo-cls-1
+			fill: $yellow
+
+	nav#nav
+		a
+			color: $yellow
+			&:hover
+				color: $black
+
+body.blog
+	background: $white
+
+
+	header#head nav#nav
+		a
+			color: $black
+			&:hover
+				color: $green
+
