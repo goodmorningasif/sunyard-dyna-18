@@ -9,27 +9,29 @@
 
 /* SITE CONTEXT -> Global styles */
 
-h1, h2, h3, h5, a
-  @extend .sweet-m
-  text-transform: uppercase
-  letter-spacing: 0.05em
-  color: $black
+h1, h2, h3, h5
+	@extend %Cumber-B
+	color: $black
 
-p
-  @extend .goth-b
-
+p, a
+	@extend %Cumber-R
+	color: $black
+	font-size: 1em
+	line-height: 1.1em
 
 html 
-  box-sizing: border-box
+    box-sizing: border-box
 
 *, *:before, *:after
-  box-sizing: inherit
+    box-sizing: inherit
 
 body
+	background: linear-gradient(#f5e99f, #edd7d6, #4a8363)
 
 img
-  width: 100%
+  // width: 100%
   box-sizing: border-box
 
 /* Styles ... */
 
+@import 'main'

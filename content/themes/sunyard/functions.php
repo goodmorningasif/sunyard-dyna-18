@@ -18,6 +18,7 @@
     $_DIR = get_template_directory_uri();
 
     wp_enqueue_style('styles-min', $_DIR.'/prod/styles.css');
+    wp_enqueue_style('fonts', $_DIR.'/assets/fonts/MyFontsWebfontsKit.css');
     wp_enqueue_script('scripts-min', $_DIR.'/prod/scripts.js', array(), '1.0.0', true);
   }
   add_action( 'wp_enqueue_scripts', 'my_enqueue_style' );
@@ -76,6 +77,16 @@
     remove_action('admin_menu', '_add_themes_utility_last', 101);
   }
   add_action('_admin_menu', 'remove_editor_menu', 1);
+
+  /**
+  *
+  * Gutenberg Theme Options
+  *
+  */
+  add_theme_support( 'gutenberg', array(
+     'wide-images' => true,
+) );
+
 
 
 ?>
