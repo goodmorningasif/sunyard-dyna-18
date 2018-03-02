@@ -102,6 +102,22 @@ body.home div.content#container
 	height: 3124px
 	max-width: 100%
 
+	.plane-1
+		z-index: 100
+
+	.plane-2
+		z-index: 200
+
+	.plane-3
+		z-index: 300
+
+	.plane-4
+		z-index: 400
+
+	.plane-5
+		z-index: 500
+
+
 	section.wp-block-cover-image
 		+img
 		top: 0
@@ -122,16 +138,19 @@ body.home div.content#container
 		left: calc( 50% - 380px )
 		width: 320px
 
+	p.text-3
+		top: 2125px
+		left: 50%
+		width: 463px
+
+	p.text-4
+		top: 3000px
+		left: calc( 50% + 90px )
+		width: 523px
+
 	figure.img-1
 		top: 960px
 		left: calc( 50% + 80px )
-
-
-	figure.svg-1
-		top: 1220px
-		left: calc( 50% + 15px )
-		width: 121px
-		height: 303px
 
 	figure.img-2
 		top: 1340px
@@ -141,11 +160,6 @@ body.home div.content#container
 		top: 1560px
 		left: calc( 50% - 50px )
 
-	p.text-3
-		top: 2095px
-		left: 50%
-		width: 463px
-	
 	figure.img-4
 		top: 2000px
 		left: calc( 50% - 534px)
@@ -158,18 +172,76 @@ body.home div.content#container
 		top: 2550px
 		left: calc( 50% - 341px )
 
-	p.text-4
-		top: 3000px
-		left: calc( 50% + 90px )
-		width: 523px
+	figure.svg-1
+		top: 1220px
+		left: calc( 50% + 15px )
+		width: 121px
+		height: 303px
 
+	figure.svg-2
+		top: 1650px
+		left: calc( 50% - 660px )
+		width: 241px
+		height: 312px
+
+	figure.svg-3
+		top: 1520px
+		left: calc( 50% + 448px )
+		width: 220px
+		height: 215px
+
+	figure.svg-4
+		top: 2520px
+		left: calc( 50% - 420px)
+		width: 52px
+		height: 323px
+
+	figure.stars-1
+		top: 660px
+		left: calc( 50% - 528px )
+		width: 240px
+		height: 115px
+
+	figure.stars-2
+		top: 1094px
+		left: calc( 50% - 105px )
+		width: 149px
+		height: 383px
+
+	figure.stars-3
+		top: 1220px
+		left: calc( 50% - 450px)
+		width: 174px
+		height: 230px
+
+	figure.stars-4
+		top: 1890px
+		left: calc( 50% - 369px )
+
+	figure.stars-5
+		top: 2065px
+		left: calc( 50% + 100px )
+		width: 520px
+		height: 288px
+
+	figure.stars-6
+		top: 2780px
+		left: calc( 50% + 220px )
+		width: 229px
+		height: 98px
+
+	figure.stars-7
+		top: 2980px
+		left: calc( 50% - 110px )
+		width: 229px
+		height: 98px
 
 footer#foot
 	+flex
 	width: 100%
 	max-width: 490px
-	margin-left: 180px 
-	padding-bottom: 90px
+	margin-left: 192px 
+	padding-bottom: 88px
 
 	div.wrapper
 		flex: 0 0 50%
@@ -241,3 +313,10 @@ body.blog
 			&:hover
 				color: $green
 
+footer#foot
+	div.right.wrapper
+		a
+			color: $black
+			&:hover
+				p
+					color: $green
