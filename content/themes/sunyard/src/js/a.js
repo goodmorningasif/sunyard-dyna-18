@@ -22,11 +22,36 @@ document.onreadystatechange = () => {
         const $body = document.getElementsByTagName( "body" )[ 0 ];
         const isHome = $body.classList.contains( "home" );
 
+        $body.classList.add( "fade" );
+
         if ( isHome ) {
             const $planeOne = document.getElementsByClassName( "plane-1" );
             const $planeTwo = document.getElementsByClassName( "plane-2" );
             const $planeThree = document.getElementsByClassName( "plane-3" );
             const $planeFour = document.getElementsByClassName( "plane-4" );
+
+            parallax( {
+                $plane: $planeOne,
+                speed: 15,
+            } );
+
+            // --> plane two
+            parallax( {
+                $plane: $planeTwo,
+                speed: 12,
+            } );
+
+            // --> plane three
+            parallax( {
+                $plane: $planeThree,
+                speed: 6,
+            } );
+
+            // --> plane four
+            parallax( {
+                $plane: $planeFour,
+                speed: 18,
+            } );
             window.onscroll = () => {
                 // --> plane one
                 parallax( {
