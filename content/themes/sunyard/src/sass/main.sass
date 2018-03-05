@@ -5,261 +5,501 @@
 /* INCEPTION RULE: DO NOT nest more than 4  */
 
 header#head
-	position: relative
-	z-index: 250
+    position: relative
+    z-index: 250
 
-	nav#nav
-		position: absolute
-		top: 50px
-		left: 50px
-		+flex($b: flex-start)
+    nav#nav
+        position: absolute
+        top: 50px
+        left: 50px
+        +flex($b: flex-start)
+        +tablet
+            top: 20px
+            left: 20px
+            width: 200px
 
-		div.menu-item
-			flex: 0 0 28%
-			padding-bottom: 8px
+        div.menu-item
+            flex: 0 0 28%
+            padding-bottom: 8px
 
-		div:last-of-type
-			flex: 0 0 100%
-			padding-left: 20px
+        div:last-of-type
+            flex: 0 0 100%
+            padding-left: 20px
 
-		span
-			position: relative
-			top: -3px
+        span
+            position: relative
+            top: -3px
 
 
-	section#feat-logo
-		position: absolute
-		top: 0
-		left: 0
-		width: 100%
+    section#feat-logo
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
 
-		div.svg
-			position: absolute
+        div.svg
+            position: absolute
 
-		div.svg.hanging-ferns
-			top: -3px
-			left: calc( 50% - 77px )
-			z-index: 100
-			svg
-				width: 167px
-				height: 101px
+        div.svg.hanging-ferns
+            top: -2px
+            left: calc( 50% - 77px )
+            z-index: 100
+            +tablet
+                left: initial
+                right: 47px
+            svg
+                width: 167px
+                height: 101px
+                +tablet
+                    width: 40px
+                    height: 26px
 
-		div.svg.sun-ferns
-			top: 20px
-			left: calc( 50% - 8px )
-			z-index: 100
-			svg
-				width: 306px
-				height: 380px
+        div.svg.sun-ferns
+            top: 20px
+            left: calc( 50% - 8px )
+            z-index: 100
+            +tablet
+                left: initial
+                top: 0
+                right: -3px
+            svg
+                width: 306px
+                height: 380px
+                +tablet
+                    width: 74px
+                    height: 92px
 
-		div.svg.mermaid
-			top: 110px
-			left: calc( 50% - 273px )
-			z-index: 100
-			svg
-				width: 273px
-				height: 420px
+        div.svg.mermaid
+            top: 110px
+            left: calc( 50% - 273px )
+            z-index: 100
+            +tablet
+                left: initial
+                top: 22px
+                right: 69px
+            svg
+                width: 273px
+                height: 420px
+                +tablet
+                    width: 67px
+                    height: 102px
 
-		div.svg.main-logo
-			top: 80px
-			left: calc( 50% - 200px )
-			z-index: 50
-			svg
-				width: 400px
-				height: 210px
+        div.svg.main-logo
+            top: 80px
+            left: calc( 50% - 200px )
+            z-index: 50
+            +tablet
+                left: initial
+                top: 20px
+                right: 20px
+
+            svg
+                width: 400px
+                height: 210px
+                +tablet
+                    width: 98px
+                    height: 48px
 
 
 div.content#container
-	width: 100%
-	max-width: 780px
-	padding-top: 450px
-	padding-bottom: 150px
-	margin: 0 auto
+    width: 100%
+    max-width: 780px
+    padding-top: 450px
+    padding-bottom: 150px
+    margin: 0 auto
+    +tablet
+        padding-top: 150px
+        padding-bottom: 50px
+        max-width: 300px
 
-	h6
-		padding-bottom: 20px
-	p
-		text-indent: 50px
-		padding-bottom: 40px 
+    h6
+        padding-bottom: 20px
 
-	figure
-		img
-			display: block
-			margin: 0 auto
-			padding-top: 40px
-			padding-bottom: 40px
+    p
+        text-indent: 50px
+        padding-bottom: 40px 
 
-body.blog div.content#container
-	padding-top: 550px
+    figure
+        img
+            display: block
+            margin-left: auto
+            margin-right: auto
+            margin-top: 40px
+            margin-bottom: 40px
+
+body.blog div.content#container,
+body.single div.content#container
+    padding-top: 550px
+    +tablet
+        padding-top: 150px
+
+    h1, 
+    h2, 
+    h3,
+    h4,
+    h5,
+    h6,
+    p
+        +tablet
+            max-width: 300px
+            margin: 0 auto
+
+    img
+        +tablet
+            max-width: 300px
 
 
 body.home div.content#container > *
-	position: absolute
+    position: absolute
 
 body.home div.content#container
-	position: relative
-	z-index: 100
-	height: 3124px
-	max-width: 100%
+    position: relative
+    z-index: 100
+    height: 3124px
+    max-width: 100%
+    +tablet
+        height: 2100px
 
-	.plane-1
-		z-index: 100
+    figure
+        img
+            +tablet
+                margin-top: 0
+                margin-bottom: 0
 
-	.plane-2
-		z-index: 200
+    .plane-1
+        z-index: 100
 
-	.plane-3
-		z-index: 300
+    .plane-2
+        z-index: 200
 
-	.plane-4
-		z-index: 400
+    .plane-3
+        z-index: 300
 
-	.plane-5
-		z-index: 500
+    .plane-4
+        z-index: 400
+
+    .plane-5
+        z-index: 500
 
 
-	section.wp-block-cover-image
-		+img
-		top: 0
-		left: 0
-		height: 768px
-		width: 100%
+    section.wp-block-cover-image
+        +img
+        top: 0
+        left: 0
+        height: 768px
+        width: 100%
+        +tablet
+            max-height: 270px
 
-	p
-		text-indent: 0
+    p
+        text-indent: 0
 
-	p.text-1
-		top: 820px
-		left: calc( 50% - 214px )
-		width: 520px
+    p.text-1
+        top: 820px
+        left: calc( 50% - 214px )
+        width: 520px
+        +tablet
+            top: 320px
+            left: 30px
+            width: 300px
+            max-width: calc( 100vw - 60px )
 
-	p.text-2
-		top: 930px
-		left: calc( 50% - 380px )
-		width: 320px
+    p.text-2
+        top: 930px
+        left: calc( 50% - 380px )
+        width: 320px
+        +tablet
+            top: 700px
+            left: 30px
+            width: 220px
 
-	p.text-3
-		top: 2125px
-		left: 50%
-		width: 463px
+    p.text-3
+        top: 2125px
+        left: 50%
+        width: 463px
+        +tablet
+            top: 1260px
+            left: calc( 100% - 280px )
+            width: 250px
 
-	p.text-4
-		top: 3000px
-		left: calc( 50% + 90px )
-		width: 523px
+    p.text-4
+        top: 3000px
+        left: calc( 50% + 90px )
+        width: 523px
+        +tablet
+            top: 1970px
+            left: 30px
+            width: 300px
+            max-width: calc( 100vw - 60px )
 
-	figure.img-1
-		top: 960px
-		left: calc( 50% + 80px )
+    figure.img-1
+        top: 960px
+        left: calc( 50% + 80px )
+        +tablet
+            top: 390px
+            left: 30px
+        img
+            +tablet
+                max-width: 184px
+                max-height: 245px
 
-	figure.img-2
-		top: 1340px
-		left: calc( 50% - 544px )
+    figure.img-2
+        top: 1340px
+        left: calc( 50% - 544px )
+        +tablet
+            top: 965px
+            left: 30px
+            max-width: 200px
+            height: 150px
+        img
+            +tablet
+                max-width: 200px
+                max-height: 150px
 
-	figure.img-3
-		top: 1560px
-		left: calc( 50% - 50px )
+    figure.img-3
+        top: 1560px
+        left: calc( 50% - 50px )
+        +tablet
+            top: 1045px
+            left: calc( 100% - 230px )
+        img
+            +tablet
+                max-width: 200px
+                max-height: 150px
 
-	figure.img-4
-		top: 2000px
-		left: calc( 50% - 534px)
+    figure.img-4
+        top: 2000px
+        left: calc( 50% - 534px)
+        +tablet
+            top: 1340px
+            left: 30px
+            max-width: 215px
+            height: 286px
+        img
+            +tablet
+                max-width: 215px
+                max-height: 286px
 
-	figure.img-5
-		top: 2250px
-		left: calc( 50% + 20px )
+    figure.img-5
+        top: 2250px
+        left: calc( 50% + 20px )
+        +tablet
+            top: 1660px
+            left: calc( 100% - 294px )
+        img
+            +tablet
+                max-width: 265px
+                max-height: 198px
 
-	figure.img-6
-		top: 2550px
-		left: calc( 50% - 341px )
+    figure.img-6
+        top: 2550px
+        left: calc( 50% - 341px )
+        +tablet
+            top: 1760px
+            left: 30px
+            max-width: 150px
+            height: 112px
+        img
+            +tablet
+                max-width: 150px
+                max-height: 112px
 
-	figure.svg-1
-		top: 1220px
-		left: calc( 50% + 15px )
-		width: 121px
-		height: 303px
 
-	figure.svg-2
-		top: 1650px
-		left: calc( 50% - 660px )
-		width: 241px
-		height: 312px
+    figure.svg-1
+        top: 1220px
+        left: calc( 50% + 15px )
+        width: 121px
+        height: 303px
+        +tablet
+            top: 570px
+            left: 6px
+            max-width: 47px
+            max-height: 100px
+        img
+            +tablet
+                max-width: 47px
+                max-height: 100px
 
-	figure.svg-3
-		top: 1520px
-		left: calc( 50% + 448px )
-		width: 220px
-		height: 215px
+    figure.svg-2
+        top: 1650px
+        left: calc( 50% - 660px )
+        width: 241px
+        height: 312px
+        +tablet
+            top: 1090px
+            left: 20px
+            max-width: 105px
+            height: 79px
+        img
+            +tablet
+                max-width: 105px
+                max-height: 79px
 
-	figure.svg-4
-		top: 2520px
-		left: calc( 50% - 420px)
-		width: 52px
-		height: 323px
+    figure.svg-3
+        top: 1520px
+        left: calc( 50% + 448px )
+        width: 220px
+        height: 215px
+        +tablet
+            top: 1040px
+            left: calc( 100% - 130px )
+            max-width: 101px
+            height: 100px
+        img
+            +tablet
+                max-width: 101px
+                max-height: 100px
 
-	figure.stars-1
-		top: 660px
-		left: calc( 50% - 528px )
-		width: 240px
-		height: 115px
+    figure.svg-4
+        top: 2520px
+        left: calc( 50% - 420px)
+        width: 52px
+        height: 323px
+        +tablet
+            top: 1720px
+            left: 30px
+            max-width: 32px
+            height: 196px
+        img
+            +tablet
+                max-width: 32px
+                max-height: 196px
 
-	figure.stars-2
-		top: 1094px
-		left: calc( 50% - 105px )
-		width: 149px
-		height: 383px
 
-	figure.stars-3
-		top: 1220px
-		left: calc( 50% - 450px)
-		width: 174px
-		height: 230px
+    figure.stars-1
+        top: 660px
+        left: calc( 50% - 528px )
+        width: 240px
+        height: 115px
+        +tablet
+            top: 205px
+            left: 20px
+            width: 102px
+            height: 46px
+        img
+            +tablet
+                max-width: 102px
+                max-height: 46px
 
-	figure.stars-4
-		top: 1890px
-		left: calc( 50% - 369px )
+    figure.stars-2
+        top: 1094px
+        left: calc( 50% - 105px )
+        width: 149px
+        height: 383px
+        +tablet
+            top: 280px
+            left: calc( 50% + 100px )
+        img
+            max-width: 120px
+            max-height: 309px
 
-	figure.stars-5
-		top: 2065px
-		left: calc( 50% + 100px )
-		width: 520px
-		height: 288px
+    figure.stars-3
+        top: 1220px
+        left: calc( 50% - 450px)
+        width: 174px
+        height: 230px
+        +tablet
+            top: 0
+            left: 0
+            display: none
+        img
+            +tablet
+                max-width: 135px
+                max-height: 100px
 
-	figure.stars-6
-		top: 2780px
-		left: calc( 50% + 220px )
-		width: 229px
-		height: 98px
+    figure.stars-4
+        top: 1890px
+        left: calc( 50% - 369px )
+        +tablet
+            top: 0
+            left: 0
+            display: none
+        img
+            +tablet
+                max-width: 135px
+                max-height: 100px
 
-	figure.stars-7
-		top: 2980px
-		left: calc( 50% - 110px )
-		width: 229px
-		height: 98px
+    figure.stars-5
+        top: 2065px
+        left: calc( 50% + 100px )
+        width: 520px
+        height: 288px
+        +tablet
+            top: 0
+            left: 0
+            display: none
+        img
+            +tablet
+                max-width: 135px
+                max-height: 100px
+
+    figure.stars-6
+        top: 2780px
+        left: calc( 50% + 220px )
+        width: 229px
+        height: 98px
+        +tablet
+            top: 1620px
+            left: calc( 50% - 135px )
+            max-width: 135px
+            height: 58px
+        img
+            +tablet
+                max-width: 135px
+                max-height: 58px
+
+    figure.stars-7
+        top: 2980px
+        left: calc( 50% - 110px )
+        width: 229px
+        height: 98px
+        +tablet
+            top: 0
+            left: 0
+            display: none
+        img
+            +tablet
+                max-width: 135px
+                max-height: 100px
 
 footer#foot
-	+flex
-	width: 100%
-	max-width: 490px
-	margin-left: 192px 
-	padding-bottom: 88px
+    +flex
+    width: 100%
+    max-width: 490px 
+    margin: 0 auto
+    padding-bottom: 88px
+    padding-left: 40px
+    transform: translateX(-200px) translateY(0)
+    +tablet
+        max-width: 100%
+        transform: translateX(0) translateY(0)
 
-	div.wrapper
-		flex: 0 0 50%
+    div.wrapper
+        flex: 0 0 50%
+        +tablet
+            flex: 0 0 100%
 
-	div.left.wrapper
-		div.svg.sun-shine
-			svg
-				width: 229px
-				heigth: 141px
+    div.left.wrapper
+        +tablet
+            order: 2
+        div.svg.sun-shine
+            svg
+                width: 220px
+                height: 136px
+                +tablet
+                    width: 111px
+                    height: 69px
 
-	div.right.wrapper
-		address
-			p
-				margin-bottom: 8px
+    div.right.wrapper
+        +tablet
+            order: 1
+        address
+            p
+                margin-bottom: 8px
 
-			svg
-				width: 193px
-				height: 8px
+            svg
+                width: 193px
+                height: 8px
 
 
 /* OBJECTS -> For styling objects */
@@ -268,55 +508,86 @@ footer#foot
 
 header#head
 
-	div.svg
-		path.mermaid-cls-1,
-		path.sunferns-cls-1,
-		path.hanging-cls-1
-			fill: $green
+    div.svg
+        path.mermaid-cls-1,
+        path.sunferns-cls-1,
+        path.hanging-cls-1
+            fill: $green
 
-		polygon.logo-cls-1,
-		path.logo-cls-1
-			fill: $black
+        polygon.logo-cls-1,
+        path.logo-cls-1
+            fill: $black
 
-	nav#nav
-		a
-			font-size: 0.7rem
-			color: $black
-			&:hover
-				color: $white
+    nav#nav
+        a
+            font-size: 0.7rem
+            color: $black
+            &:hover
+                color: $white
 
 
 body.home header#head
-	div.svg
-		path.mermaid-cls-1,
-		path.sunferns-cls-1,
-		path.hanging-cls-1
-			fill: $black
+    div.svg
+        path.mermaid-cls-1,
+        path.sunferns-cls-1,
+        path.hanging-cls-1
+            fill: $black
 
-		polygon.logo-cls-1,
-		path.logo-cls-1
-			fill: $yellow
+        polygon.logo-cls-1,
+        path.logo-cls-1
+            fill: $yellow
 
-	nav#nav
-		a
-			color: $yellow
-			&:hover
-				color: $black
+    nav#nav
+        a
+            color: $yellow
+            &:hover
+                color: $black
 
-body.blog
-	background: $white
+body.blog,
+body.single
+    background: $white
+
+    header#head nav#nav
+        a
+            color: $black
+            &:hover
+                color: $green
+
+    h1, 
+    h2, 
+    h3,
+    h4,
+    h5,
+    h6
+        @extend %Cumber-B
+        color: $black
+
+        a
+            @extend %Cumber-B
+            color: $black
+            &:hover
+                color: $green
+
+    p
+        @extend %Cumber-R
+        color: $black
+
+        a
+            @extend %Cumber-R
+            color: $black
+            &:hover
+                color: $green
+
+        em,
+        strong
+            @extend %Cumber-B
 
 
-	header#head nav#nav
-		a
-			color: $black
-			&:hover
-				color: $green
 
 footer#foot
-	div.right.wrapper
-		a
-			color: $black
-			&:hover
-				p
-					color: $green
+    div.right.wrapper
+        a
+            color: $black
+            &:hover
+                p
+                    color: $green

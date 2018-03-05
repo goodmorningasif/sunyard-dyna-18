@@ -43,7 +43,7 @@ document.onreadystatechange = () => {
                 // --> plane three
                 parallax( {
                     $plane: $planeThree,
-                    speed: 4,
+                    speed: 6,
                 } );
 
                 // --> plane four

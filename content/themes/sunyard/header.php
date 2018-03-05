@@ -39,13 +39,13 @@ $_DIR = get_template_directory_uri();
         <header id="head">
             <nav id="nav">
                 <div class="menu-item">
-                    <a href=""><span class="a">a</span>b<span class="o">o</span>u&nbsp;t</a>
+                    <a href="/"><span class="a">a</span>b<span class="o">o</span>u&nbsp;t</a>
                 </div>
                 <div class="menu-item">
-                    <a href="">fAq</a>
+                    <a href="/faq">fAq</a>
                 </div>
                 <div class="menu-item">
-                    <a href="">proje&nbsp;<span class="c">c</span>t pr&nbsp;ogre&nbsp;ss <span class="u">u</span>pd&nbsp;ate</a>
+                    <a href="/updates">proje&nbsp;<span class="c">c</span>t pr&nbsp;ogre&nbsp;ss <span class="u">u</span>pd&nbsp;ate</a>
                 </div>
             </nav>
             <section id="feat-logo">

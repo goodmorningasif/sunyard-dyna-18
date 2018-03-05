@@ -10,25 +10,36 @@
 /* SITE CONTEXT -> Global styles */
 
 h1, h2, h3, h5, h6
-	@extend %Cumber-B
-	color: $black
-	line-height: 1.3em
+    @extend %Cumber-B
+    color: $black
+    line-height: 1.3em
 
 p, a
-	@extend %Cumber-R
-	color: $black
-	font-size: 1em
-	line-height: 1.1em
+    @extend %Cumber-R
+    color: $black
+    font-size: 1em
+    line-height: 1.1em
+    +tablet
+        font-size: 0.8em
 
 html 
     box-sizing: border-box
     background-color: $black
+    +tablet
+        width: 100%
+        max-width: 100vw
+        overflow-x: hidden
 
 *, *:before, *:after
     box-sizing: inherit
 
 body
-	background: linear-gradient(#f5e99f, #edd7d6, #4a8363)
+    background: linear-gradient(#f5e99f, #edd7d6, #4a8363)
+    +tablet
+        width: 100%
+        max-width: 100vw
+        overflow-x: hidden
+        margin-right: -3px
 
 img
   // width: 100%
