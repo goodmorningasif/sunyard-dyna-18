@@ -1,4 +1,5 @@
 /*
+
 * parallax
 */
 
@@ -12,6 +13,15 @@ const parallax = ( {
         $el.setAttribute( "style", `transform: translateX(0) translateY(${ mutate }px)` );
     } );
 };
+
+function initParallax( ...args ) {
+    args.forEach( ( arg ) => {
+        parallax( {
+            $plane: arg.$plane,
+            speed: arg.speed,
+        } );
+    } );
+}
 
 /*
 * Document.Ready
@@ -30,54 +40,33 @@ document.onreadystatechange = () => {
             const $planeThree = document.getElementsByClassName( "plane-3" );
             const $planeFour = document.getElementsByClassName( "plane-4" );
 
-            parallax( {
+            initParallax( {
                 $plane: $planeOne,
                 speed: 15,
-            } );
-
-            // --> plane two
-            parallax( {
+            }, {
                 $plane: $planeTwo,
                 speed: 12,
-            } );
-
-            // --> plane three
-            parallax( {
+            }, {
                 $plane: $planeThree,
                 speed: 6,
-            } );
-
-            // --> plane four
-            parallax( {
+            }, {
                 $plane: $planeFour,
                 speed: 18,
             } );
             window.onscroll = () => {
-                // --> plane one
-                parallax( {
+                initParallax( {
                     $plane: $planeOne,
                     speed: 15,
-                } );
-
-                // --> plane two
-                parallax( {
+                }, {
                     $plane: $planeTwo,
                     speed: 12,
-                } );
-
-                // --> plane three
-                parallax( {
+                }, {
                     $plane: $planeThree,
                     speed: 6,
-                } );
-
-                // --> plane four
-                parallax( {
+                }, {
                     $plane: $planeFour,
                     speed: 18,
                 } );
-
-                // --> plane five remains static
             };
         }
     }

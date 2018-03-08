@@ -1,0 +1,38 @@
+@keyframes squiggle1
+    0%
+        filter: url("#turb-1");
+    25%
+        filter: url("#turb-2");
+    50%
+        filter: url("#turb-3");
+    75%
+        filter: url("#turb-4");
+    100%
+        filter: url("#turb-5");
+    
+@keyframes squiggle2
+    0%
+        filter: url("#turb-4");
+    100%
+        filter: url("#turb-5");
+
+section#feat-logo
+    div.svg.hanging-ferns,
+    div.svg.sun-ferns,
+    div.svg.mermaid
+        svg
+            animation: squiggle1 0.5s infinite alternate
+
+div.content
+    figure.svg
+        svg
+            animation: squiggle2 0.8s infinite alternate
+
+    figure.stars
+        // transition: transform 0.5s ease-in  
+
+footer#foot
+    div.svg
+        svg
+            animation: squiggle1 0.5s infinite alternate
+

@@ -462,6 +462,15 @@ body.home div.content#container
                 max-width: 135px
                 max-height: 100px
 
+    figure.circle-1
+        top: 2980px
+        left: calc( 50% - 110px )
+        width: 10px
+        height: 10px
+        svg
+            width: 8px
+            height: 8px
+
 footer#foot
     +flex
     width: 100%
@@ -520,7 +529,7 @@ header#head
 
     nav#nav
         a
-            font-size: 0.7rem
+            font-size: 0.8rem
             color: $black
             &:hover
                 color: $white
@@ -590,4 +599,15 @@ footer#foot
             color: $black
             &:hover
                 p
-                    color: $green
+                    color: $white
+
+body.blog,
+body.single
+    footer#foot
+        div.right.wrapper
+            a
+                &:hover
+                    p
+                        color: $green 
+
+
