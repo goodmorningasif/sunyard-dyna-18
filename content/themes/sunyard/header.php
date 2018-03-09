@@ -83,6 +83,9 @@ $_DIR = get_template_directory_uri();
                 <div class="svg main-logo">
                     <?php echo file_get_contents( $_DIR . "/assets/svg/svg_logo.svg"); ?>
                 </div>
+                <div class="svg super-star">
+                    <?php echo file_get_contents( $_DIR . "/assets/svg/svg_super-star.svg"); ?>
+                </div>
             </section>
         </header>
 

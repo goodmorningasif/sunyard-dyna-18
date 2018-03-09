@@ -53,6 +53,7 @@ document.onreadystatechange = () => {
                 $plane: $planeFour,
                 speed: 18,
             } );
+
             window.onscroll = () => {
                 initParallax( {
                     $plane: $planeOne,

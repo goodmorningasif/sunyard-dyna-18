@@ -13,7 +13,7 @@ header#head
         top: 50px
         left: 50px
         +flex($b: flex-start)
-        +tablet
+        +mobile
             top: 20px
             left: 20px
             width: 200px
@@ -44,13 +44,13 @@ header#head
             top: -2px
             left: calc( 50% - 77px )
             z-index: 100
-            +tablet
+            +mobile
                 left: initial
                 right: 47px
             svg
                 width: 167px
                 height: 101px
-                +tablet
+                +mobile
                     width: 40px
                     height: 26px
 
@@ -58,14 +58,14 @@ header#head
             top: 20px
             left: calc( 50% - 8px )
             z-index: 100
-            +tablet
+            +mobile
                 left: initial
                 top: 0
                 right: -3px
             svg
                 width: 306px
                 height: 380px
-                +tablet
+                +mobile
                     width: 74px
                     height: 92px
 
@@ -73,14 +73,14 @@ header#head
             top: 110px
             left: calc( 50% - 273px )
             z-index: 100
-            +tablet
+            +mobile
                 left: initial
                 top: 22px
                 right: 69px
             svg
                 width: 273px
                 height: 420px
-                +tablet
+                +mobile
                     width: 67px
                     height: 102px
 
@@ -88,7 +88,7 @@ header#head
             top: 80px
             left: calc( 50% - 200px )
             z-index: 50
-            +tablet
+            +mobile
                 left: initial
                 top: 20px
                 right: 20px
@@ -96,9 +96,25 @@ header#head
             svg
                 width: 400px
                 height: 210px
-                +tablet
+                +mobile
                     width: 98px
                     height: 48px
+
+        div.svg.super-star
+            top: 100px
+            left: calc( 50% - 113px )
+            z-index: 50
+            +mobile
+                left: initial
+                top: 20px
+                right: -5px
+
+            svg
+                width: 435px
+                height: 305px
+                +mobile
+                    width: 105px
+                    height: 74px
 
 
 div.content#container
@@ -107,17 +123,23 @@ div.content#container
     padding-top: 450px
     padding-bottom: 150px
     margin: 0 auto
-    +tablet
+    +mobile
         padding-top: 150px
         padding-bottom: 50px
         max-width: 300px
 
     h6
         padding-bottom: 20px
+        +tablet
+            padding-left: 40px
+            padding-right: 40px
 
     p
         text-indent: 50px
         padding-bottom: 40px 
+        +tablet
+            padding-left: 40px
+            padding-right: 40px
 
     figure
         img
@@ -130,7 +152,7 @@ div.content#container
 body.blog div.content#container,
 body.single div.content#container
     padding-top: 550px
-    +tablet
+    +mobile
         padding-top: 150px
 
     h1, 
@@ -140,12 +162,12 @@ body.single div.content#container
     h5,
     h6,
     p
-        +tablet
+        +mobile
             max-width: 300px
             margin: 0 auto
 
     img
-        +tablet
+        +mobile
             max-width: 300px
 
 
@@ -157,12 +179,12 @@ body.home div.content#container
     z-index: 100
     height: 3124px
     max-width: 100%
-    +tablet
+    +mobile
         height: 2100px
 
     figure
         img
-            +tablet
+            +mobile
                 margin-top: 0
                 margin-bottom: 0
 
@@ -188,7 +210,7 @@ body.home div.content#container
         left: 0
         height: 768px
         width: 100%
-        +tablet
+        +mobile
             max-height: 270px
 
     p
@@ -198,7 +220,7 @@ body.home div.content#container
         top: 820px
         left: calc( 50% - 214px )
         width: 520px
-        +tablet
+        +mobile
             top: 320px
             left: 30px
             width: 300px
@@ -208,7 +230,7 @@ body.home div.content#container
         top: 930px
         left: calc( 50% - 380px )
         width: 320px
-        +tablet
+        +mobile
             top: 700px
             left: 30px
             width: 220px
@@ -217,7 +239,7 @@ body.home div.content#container
         top: 2125px
         left: 50%
         width: 463px
-        +tablet
+        +mobile
             top: 1260px
             left: calc( 100% - 280px )
             width: 250px
@@ -226,7 +248,7 @@ body.home div.content#container
         top: 3000px
         left: calc( 50% + 90px )
         width: 523px
-        +tablet
+        +mobile
             top: 1970px
             left: 30px
             width: 300px
@@ -235,72 +257,72 @@ body.home div.content#container
     figure.img-1
         top: 960px
         left: calc( 50% + 80px )
-        +tablet
+        +mobile
             top: 390px
             left: 30px
         img
-            +tablet
+            +mobile
                 max-width: 184px
                 max-height: 245px
 
     figure.img-2
         top: 1340px
         left: calc( 50% - 544px )
-        +tablet
+        +mobile
             top: 965px
             left: 30px
             max-width: 200px
             height: 150px
         img
-            +tablet
+            +mobile
                 max-width: 200px
                 max-height: 150px
 
     figure.img-3
         top: 1560px
         left: calc( 50% - 50px )
-        +tablet
+        +mobile
             top: 1045px
             left: calc( 100% - 230px )
         img
-            +tablet
+            +mobile
                 max-width: 200px
                 max-height: 150px
 
     figure.img-4
         top: 2000px
         left: calc( 50% - 534px)
-        +tablet
+        +mobile
             top: 1340px
             left: 30px
             max-width: 215px
             height: 286px
         img
-            +tablet
+            +mobile
                 max-width: 215px
                 max-height: 286px
 
     figure.img-5
         top: 2250px
         left: calc( 50% + 20px )
-        +tablet
+        +mobile
             top: 1660px
             left: calc( 100% - 294px )
         img
-            +tablet
+            +mobile
                 max-width: 265px
                 max-height: 198px
 
     figure.img-6
         top: 2550px
         left: calc( 50% - 341px )
-        +tablet
+        +mobile
             top: 1760px
             left: 30px
             max-width: 150px
             height: 112px
         img
-            +tablet
+            +mobile
                 max-width: 150px
                 max-height: 112px
 
@@ -310,13 +332,13 @@ body.home div.content#container
         left: calc( 50% + 15px )
         width: 121px
         height: 303px
-        +tablet
+        +mobile
             top: 570px
             left: 6px
             max-width: 47px
             max-height: 100px
         img
-            +tablet
+            +mobile
                 max-width: 47px
                 max-height: 100px
 
@@ -325,13 +347,13 @@ body.home div.content#container
         left: calc( 50% - 660px )
         width: 241px
         height: 312px
-        +tablet
+        +mobile
             top: 1090px
             left: 20px
             max-width: 105px
             height: 79px
         img
-            +tablet
+            +mobile
                 max-width: 105px
                 max-height: 79px
 
@@ -340,13 +362,13 @@ body.home div.content#container
         left: calc( 50% + 448px )
         width: 220px
         height: 215px
-        +tablet
+        +mobile
             top: 1040px
             left: calc( 100% - 130px )
             max-width: 101px
             height: 100px
         img
-            +tablet
+            +mobile
                 max-width: 101px
                 max-height: 100px
 
@@ -355,13 +377,13 @@ body.home div.content#container
         left: calc( 50% - 420px)
         width: 52px
         height: 323px
-        +tablet
+        +mobile
             top: 1720px
             left: 30px
             max-width: 32px
             height: 196px
         img
-            +tablet
+            +mobile
                 max-width: 32px
                 max-height: 196px
 
@@ -371,13 +393,13 @@ body.home div.content#container
         left: calc( 50% - 528px )
         width: 240px
         height: 115px
-        +tablet
+        +mobile
             top: 205px
             left: 20px
             width: 102px
             height: 46px
         img
-            +tablet
+            +mobile
                 max-width: 102px
                 max-height: 46px
 
@@ -386,7 +408,7 @@ body.home div.content#container
         left: calc( 50% - 105px )
         width: 149px
         height: 383px
-        +tablet
+        +mobile
             top: 280px
             left: calc( 50% + 100px )
         img
@@ -398,24 +420,24 @@ body.home div.content#container
         left: calc( 50% - 450px)
         width: 174px
         height: 230px
-        +tablet
+        +mobile
             top: 0
             left: 0
             display: none
         img
-            +tablet
+            +mobile
                 max-width: 135px
                 max-height: 100px
 
     figure.stars-4
         top: 1890px
         left: calc( 50% - 369px )
-        +tablet
+        +mobile
             top: 0
             left: 0
             display: none
         img
-            +tablet
+            +mobile
                 max-width: 135px
                 max-height: 100px
 
@@ -424,12 +446,12 @@ body.home div.content#container
         left: calc( 50% + 100px )
         width: 520px
         height: 288px
-        +tablet
+        +mobile
             top: 0
             left: 0
             display: none
         img
-            +tablet
+            +mobile
                 max-width: 135px
                 max-height: 100px
 
@@ -438,13 +460,13 @@ body.home div.content#container
         left: calc( 50% + 220px )
         width: 229px
         height: 98px
-        +tablet
+        +mobile
             top: 1620px
             left: calc( 50% - 135px )
             max-width: 135px
             height: 58px
         img
-            +tablet
+            +mobile
                 max-width: 135px
                 max-height: 58px
 
@@ -453,12 +475,12 @@ body.home div.content#container
         left: calc( 50% - 110px )
         width: 229px
         height: 98px
-        +tablet
+        +mobile
             top: 0
             left: 0
             display: none
         img
-            +tablet
+            +mobile
                 max-width: 135px
                 max-height: 100px
 
@@ -479,28 +501,28 @@ footer#foot
     padding-bottom: 88px
     padding-left: 40px
     transform: translateX(-200px) translateY(0)
-    +tablet
+    +mobile
         max-width: 100%
         transform: translateX(0) translateY(0)
 
     div.wrapper
         flex: 0 0 50%
-        +tablet
+        +mobile
             flex: 0 0 100%
 
     div.left.wrapper
-        +tablet
+        +mobile
             order: 2
         div.svg.sun-shine
             svg
                 width: 220px
                 height: 136px
-                +tablet
+                +mobile
                     width: 111px
                     height: 69px
 
     div.right.wrapper
-        +tablet
+        +mobile
             order: 1
         address
             p
@@ -552,9 +574,16 @@ body.home header#head
             &:hover
                 color: $black
 
+body:not(.home)
+    div.svg.super-star
+        svg
+            .group-2
+                fill: $white
+    
 body.blog,
 body.single
     background: $white
+
 
     header#head nav#nav
         a
