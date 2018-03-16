@@ -2,19 +2,19 @@
 
 $break-xlarge: 1300px
 $break-large: 1024px
-$break-medium: 700px
-$break-small: 500px
+$break-medium: 1050px
+$break-small: 505px
 
 =desktop
-  @media(min-width: #{$break-xlarge})
+  @media screen and (min-width: #{$break-xlarge})
     @content
 
 =tablet
-  @media(min-width: #{$break-small}) and (max-width: #{$break-medium})
+  @media screen and (min-width: #{$break-small}) and (max-width: #{$break-medium})
     @content
     
 =mobile
-  @media(max-width: #{$break-small})
+  @media screen and (max-width: #{$break-small})
     @content
 
     

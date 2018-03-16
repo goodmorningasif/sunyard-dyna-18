@@ -1,0 +1,99 @@
+<svg width="500px" height="500px" viewBox="0 0 1000 1000" 
+  xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="tiny"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+ 
+	<title>animation test: path</title> 
+	<desc>
+	Animation of a path with the commands M and L and stroke-linecap round,
+	is reduced in the end to a path of length zero painted as a circle in the
+	center of the SVG.
+	If something red is getting visible, an error occured.
+	</desc> 
+
+	
+<circle id="center" cx="500" cy="500" r="50" fill="red" />
+<circle id="c1" cx="100" cy="100" r="50" fill="red" />
+<circle id="c2" cx="100" cy="900" r="50" fill="red" />
+<circle id="c3" cx="900" cy="100" r="50" fill="red" />
+<circle id="c4" cx="900" cy="900" r="50" fill="red" />
+
+<path id="p1" 
+	d="M100,100L900,900 M100,900L900,100"
+	stroke="blue" fill="none"
+	stroke-width="100"
+	stroke-linecap="round" />
+
+<animate xlink:href="#p1"
+	attributeName="d"
+	attributeType="XML"
+        values="M100,100L900,900 M100,900L900,100; 
+	M300,700L700,300 M300,300L700,700;
+	M400,400L600,600 M400,600L600,400; 
+	M500,500L500,500 M500,500L500,500"
+	dur="10s"
+	fill="freeze"
+	repeatCount="indefinite" 
+	/>
+	
+<animate xlink:href="#c1"
+	attributeName="cx"
+	attributeType="XML"
+        values="100; 300; 400; 500"
+	dur="10s"
+	fill="freeze"
+	repeatCount="indefinite" />
+<animate xlink:href="#c1"
+	attributeName="cy"
+	attributeType="XML"
+        values="100; 700; 400; 500"
+	dur="10s"
+	fill="freeze"
+	repeatCount="indefinite" />
+	
+<animate xlink:href="#c2"
+	attributeName="cx"
+	attributeType="XML"
+        values="100; 300; 400; 500"
+	dur="10s"
+	fill="freeze"
+	repeatCount="indefinite" />
+<animate xlink:href="#c2"
+	attributeName="cy"
+	attributeType="XML"
+        values="900; 300; 600; 500"
+	dur="10s"
+	fill="freeze"
+	repeatCount="indefinite" />
+	
+	
+<animate xlink:href="#c3"
+	attributeName="cx"
+	attributeType="XML"
+        values="900; 700; 600; 500"
+	dur="10s"
+	fill="freeze"
+	repeatCount="indefinite" />
+<animate xlink:href="#c3"
+	attributeName="cy"
+	attributeType="XML"
+        values="100; 700; 400; 500"
+	dur="10s"
+	fill="freeze"
+	repeatCount="indefinite" />
+	
+<animate xlink:href="#c4"
+	attributeName="cx"
+	attributeType="XML"
+        values="900; 700; 600; 500"
+	dur="10s"
+	fill="freeze"
+	repeatCount="indefinite" />
+<animate xlink:href="#c4"
+	attributeName="cy"
+	attributeType="XML"
+        values="900; 300; 600; 500"
+	dur="10s"
+	fill="freeze"
+	repeatCount="indefinite" />
+	
+</svg>

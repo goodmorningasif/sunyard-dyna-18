@@ -49,36 +49,22 @@ $_DIR = get_template_directory_uri();
                 </div>
             </nav>
             <section id="feat-logo">
-                <svg display="none">
-                    <filter id="turb-1">
-                        <feTurbulence type="fractalNoise" baseFrequency="0.001" numOctaves="2" data-filterId="3" />
-                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-                    </filter>
-                    <filter id="turb-2">
-                        <feTurbulence type="fractalNoise" baseFrequency="0.0015" numOctaves="2" data-filterId="3" />
-                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-                    </filter>
-                    <filter id="turb-3">
-                        <feTurbulence type="fractalNoise" baseFrequency="0.002" numOctaves="2" data-filterId="3" />
-                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-                    </filter>
-                    <filter id="turb-4">
-                        <feTurbulence type="fractalNoise" baseFrequency="0.0025" numOctaves="2" data-filterId="3" />
-                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-                    </filter>
-                    <filter id="turb-5">
-                        <feTurbulence type="fractalNoise" baseFrequency="0.003" numOctaves="2" data-filterId="3" />
-                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" scale="25" />
-                    </filter>
-                </svg>
                 <div class="svg hanging-ferns">
-                    <?php echo file_get_contents( $_DIR . "/assets/svg/svg_hanging-fern.svg"); ?>
+                    <?php echo file_get_contents( $_DIR . "/assets/animate/animate_hangingfern-1.svg"); ?>
+                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_hangingfern-2.svg"); ?>
+                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_hangingfern-3.svg"); ?>
+                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_hangingfern-4.svg"); ?>
                 </div>
                 <div class="svg sun-ferns">
-                    <?php echo file_get_contents( $_DIR . "/assets/svg/svg_sun-ferns.svg"); ?>
+                    <?php echo file_get_contents( $_DIR . "/assets/animate/animate_sunfern-1.svg"); ?>
+                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_sunfern-2.svg"); ?>
+                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_sunfern-3.svg"); ?>
                 </div>
                 <div class="svg mermaid">
-                    <?php echo file_get_contents( $_DIR . "/assets/svg/svg_mermaid.svg"); ?>
+                    <?php echo file_get_contents( $_DIR . "/assets/animate/animate_mermaid-1.svg"); ?>
+                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_mermaid-2.svg"); ?>
+                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_mermaid-3.svg"); ?>
+                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_mermaid-4.svg"); ?>
                 </div>
                 <div class="svg main-logo">
                     <?php echo file_get_contents( $_DIR . "/assets/svg/svg_logo.svg"); ?>
