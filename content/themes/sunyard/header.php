@@ -45,26 +45,21 @@ $_DIR = get_template_directory_uri();
                     <a href="/faq">fAq</a>
                 </div>
                 <div class="menu-item">
-                    <a href="/updates">proje&nbsp;<span class="c">c</span>t pr&nbsp;ogre&nbsp;ss <span class="u">u</span>pd&nbsp;ate</a>
+                    <a href="/updates">proje&nbsp;<span class="c">c</span>t <span class="u">u</span>pd&nbsp;ate</a>
                 </div>
             </nav>
             <section id="feat-logo">
                 <div class="svg hanging-ferns">
                     <?php echo file_get_contents( $_DIR . "/assets/animate/animate_hangingfern-1.svg"); ?>
-                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_hangingfern-2.svg"); ?>
-                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_hangingfern-3.svg"); ?>
-                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_hangingfern-4.svg"); ?>
+                    <?php echo file_get_contents( $_DIR . "/assets/animate/animate_hangingfern-2.svg"); ?>
                 </div>
                 <div class="svg sun-ferns">
                     <?php echo file_get_contents( $_DIR . "/assets/animate/animate_sunfern-1.svg"); ?>
-                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_sunfern-2.svg"); ?>
-                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_sunfern-3.svg"); ?>
+                    <?php echo file_get_contents( $_DIR . "/assets/animate/animate_sunfern-2.svg"); ?>
                 </div>
                 <div class="svg mermaid">
                     <?php echo file_get_contents( $_DIR . "/assets/animate/animate_mermaid-1.svg"); ?>
-                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_mermaid-2.svg"); ?>
-                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_mermaid-3.svg"); ?>
-                    <?php // echo file_get_contents( $_DIR . "/assets/animate/animate_mermaid-4.svg"); ?>
+                    <?php echo file_get_contents( $_DIR . "/assets/animate/animate_mermaid-2.svg"); ?>
                 </div>
                 <div class="svg main-logo">
                     <?php echo file_get_contents( $_DIR . "/assets/svg/svg_logo.svg"); ?>

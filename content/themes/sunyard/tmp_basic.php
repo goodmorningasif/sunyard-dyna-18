@@ -49,6 +49,13 @@ if ( have_posts() ) :
 			<figure class="svg svg-4 plane-4">
 				<?php echo file_get_contents( $_DIR . "/assets/svg/svg_orange-vine.svg"); ?>
 			</figure>
+			<!-- buttons -->
+			<div class="bttn" id="gal-1-right">
+				<?php echo file_get_contents( $_DIR . "/assets/svg/bttn_right.svg"); ?>
+			</div>
+			<div class="bttn" id="gal-1-left">
+				<?php echo file_get_contents( $_DIR . "/assets/svg/bttn_left.svg"); ?>
+			</div>
 		<?php endif;
 	endwhile;
 endif;
