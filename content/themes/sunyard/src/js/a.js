@@ -138,7 +138,6 @@ const slideShow = {
 /*
 * Document.Ready
 */
-
 document.onreadystatechange = () => {
     if ( document.readyState === "complete" ) {
         const $body = document.getElementsByTagName( "body" )[ 0 ];

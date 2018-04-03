@@ -204,6 +204,7 @@ div.content#container
     padding-bottom: 150px
     margin: 0 auto
     +tablet
+        padding-top: 250px
         padding-bottom: 50px
     +mobile
         padding-top: 150px
@@ -234,6 +235,8 @@ div.content#container
 body.blog div.content#container,
 body.single div.content#container
     padding-top: 450px
+    +tablet
+        padding-top: 250px
     +mobile
         padding-top: 150px
 
@@ -808,8 +811,12 @@ header#head
         a
             font-size: 0.8rem
             color: $black
+            text-shadow: 2px 2px 4px rgba(black, 0.2)
             &:hover
                 color: $white
+                
+            +tablet
+                font-size: 1rem
 
 ul.gal-1
     li.blocks-gallery-item
@@ -849,6 +856,10 @@ body.home header#head
             color: $yellow
             &:hover
                 color: $black
+            +tablet
+                color: $black
+                &:hover
+                    color: $yellow
 
 
 
